@@ -1,0 +1,10 @@
+import random
+n=int(input('請輸入你要猜的數字:'))
+a=random.randint(1,100)
+while n!=a:
+   if a < n:
+     print('數字太大大請重猜')
+   elif a > n:
+     print('數字太小請重猜')
+   n=int(input('請輸入你要猜的數字:'))
+print('恭喜你猜對了!')
