@@ -1,0 +1,17 @@
+#plot-10a.py
+
+import matplotlib.pyplot as plt
+
+values = [60, 80, 90, 55, 10, 30]
+colors = ['b', 'g', 'r', 'c', 'm', 'y']
+labels = ['US 60', 'UK 80', 'India 90', 'Germany 55', 'Australia 10', 
+          'South Korea 30']
+explode = (0, 0, 0.5, 0, 0, 0)
+
+plt.pie(values, colors=colors, labels=labels, explode=explode, 
+         counterclock=False,shadow=True)#
+
+plt.title('Population Density Index')
+#plt.legend(labels, loc=3)
+
+plt.show( )
